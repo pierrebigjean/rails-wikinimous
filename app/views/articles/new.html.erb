@@ -1,0 +1,15 @@
+<h2>New article</h2>
+
+<%= form_for @article do |f| %>
+  <div class="card mt-10" style="width: 400px">
+    <div class="card-body d-flex justify-content-between">  
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+    <div class="card-body d-flex justify-content-between">
+      <%= f.label :content %>
+      <%= f.text_field :content %>
+    </div>
+    <%= f.button :submit, class: "btn btn-primary"%>
+  </div>
+<% end %>

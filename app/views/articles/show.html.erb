@@ -1,0 +1,16 @@
+<div class="card" style="width: 400px">
+  <div class="card-body">  
+    <h2><%= @article.title %></h2>
+    <p><%= @article.content %></p>
+    <div class="text-end">
+      <%= link_to "", edit_article_path(@article), 
+          class: "fas fa-edit"%> 
+      <%= link_to "", article_path(@article), 
+          method: :delete, 
+          data: { confirm: 'Are you sure?' },
+          class: "fas fa-trash"
+      %>
+    </div>
+  </div>
+  <div>
+</div>
